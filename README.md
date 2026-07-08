@@ -1,27 +1,72 @@
-# Getting Started
+# 📚 Library Management System
 
-### Reference Documentation
-For further reference, please consider the following sections:
+## Overview
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/4.1.0/maven-plugin)
-* [Create an OCI image](https://docs.spring.io/spring-boot/4.1.0/maven-plugin/build-image.html)
-* [Spring Web](https://docs.spring.io/spring-boot/4.1.0/reference/web/servlet.html)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/4.1.0/reference/data/sql.html#data.sql.jpa-and-spring-data)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/4.1.0/reference/using/devtools.html)
+A backend Library Management System built using **Java**, **Spring Boot**, **Spring Data JPA**, **Hibernate**, **MySQL/H2 Database**, and **Maven**. The application provides REST APIs to manage books, authors, publishers, and categories.
 
-### Guides
-The following guides illustrate how to use some features concretely:
+## Features
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+- 📖 Add, update, delete and view books
+- ✍️ Manage authors
+- 🏢 Manage publishers
+- 🗂️ Manage categories
+- 🔍 RESTful APIs tested using Postman
+- 💾 Database integration using Spring Data JPA & Hibernate
 
-### Maven Parent overrides
+## Technologies Used
 
-Due to Maven's design, elements are inherited from the parent POM to the project POM.
-While most of the inheritance is fine, it also inherits unwanted elements like `<license>` and `<developers>` from the parent.
-To prevent this, the project POM contains empty overrides for these elements.
-If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
+- Java 17
+- Spring Boot
+- Spring Data JPA
+- Hibernate
+- MySQL / H2 Database
+- Maven
+- Postman
+- Eclipse IDE
 
+## Project Structure
+
+```
+src
+├── controller
+├── entity
+├── repo
+├── service
+└── resources
+```
+
+## Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/Durganjaligenji/Library-management.git
+```
+
+### Run the application
+
+1. Open the project in Eclipse or IntelliJ IDEA.
+2. Configure the database in `application.properties`.
+3. Run `LibraryApplication.java`.
+4. Test the APIs using Postman.
+
+## API Modules
+
+- Book Management
+- Author Management
+- Publisher Management
+- Category Management
+
+## Future Improvements
+
+- Spring Security with JWT Authentication
+- Borrow and Return Books
+- Fine Management
+- Swagger / OpenAPI Documentation
+- Docker Deployment
+
+## Author
+
+**Durganjali Genji**
+
+GitHub: https://github.com/Durganjaligenji
